@@ -1,50 +1,28 @@
+# Weapon Game
 
-# C++ 2 Player Weapon Fight Game (Console Version)
-
-This is a console-based two-player fighting game written in C++.  
-Each player selects a weapon, and the battle continues turn by turn until one player's health reaches zero.
-
----
+A C++ console-based game developed using object-oriented programming (OOP), where two players select weapons and battle until one is defeated. This project showcases my skills in C++ and game logic design, with plans to enhance it into a graphical game using the SFML library.
 
 ## Features
+- **Player Setup**: The console prompts players to enter their names, ages, and genders.
+- **Age Restriction**: Players under 15 years old are not allowed to play.
+- **Weapon Selection**: Each player chooses from three available weapons (expandable in the future).
+- **Gameplay**: Players fight in a turn-based battle until one player is defeated.
 
-- Weapon selection for each player
-- Turn-based combat system
-- Health tracking for both players
-- Text-based interface (terminal only)
+## Technologies
+- C++
+- Object-Oriented Programming (OOP)
 
----
-
-## Sample Output
-
-1. oyuncu: Muhammet 
-1. oyuncunun seçtiği silah: Aex
-
-2. oyunu: Kaya 
-2. oyuncunun seçtiği silah: Tron
-
-Muhammet adlı oyuncu Kaya adlı oyuncuya Aex silahı ile ateş etti.
-Kaya'nın canı: 90
-Kaya adlı oyuncu Muhammet adlı oyuncuya Tron silahı ile ateş etti.
-Muhammet'in canı: 85
-
----
-
-## Technologies Used
-
-- Language: **C++**
-- Environment: **Terminal / Console**
-
----
+## How It Works
+1. The game collects player information (name, age, gender).
+2. If both players are 15 or older, they proceed to select one of three weapons.
+3. The battle begins, and the game continues until one player is defeated.
 
 ## Future Plans
+I plan to transform this console game into a graphical 2D game using the SFML library, adding visual elements and more weapons.
 
-- GUI version using **wxWidgets** or **SFML**  
-- Health bars and weapon icons  
-- Single-player mode with basic AI
-
----
-
-## License
-
-This project is open-source and free to use.
+## Getting Started
+1. Clone the repository.
+2. Compile and run the C++ file using a C++ compiler (e.g., g++):
+   ```bash
+   g++ main.cpp -o weapon_game
+   ./weapon_game
